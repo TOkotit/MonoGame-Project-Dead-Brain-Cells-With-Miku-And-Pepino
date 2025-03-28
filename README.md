@@ -1,1 +1,22 @@
-# MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino
+# Ну какая-то игра про Мику
+
+Небольшой платформер с может быть уникальными механиками. Подробнее в [CONCEPT.md](CONCEPT.md)<br>
+ГГ - Хатсуне Мику. В прошлом подобном проекте был Тинькофф, но мемы по нему теперь не популярны<br> Референсы игр - Dead Cells и Pizza Tower. Стилистика пиксельная, потому что у меня есть пиратский Aseprite и доступ в интернет с нейронками.<br>
+Вот примерно как будет выглядеть (мысленно заменить безголового на мику)<br>
+
+<table>
+  <tr>
+    <td><img src="https://i.pinimg.com/550x/c2/d8/b8/c2d8b880fa66abe6b62c2d15d9f3405e.jpg" width="200" height="200" alt="изображение"></td>
+    <td><img src="https://digiseller.mycdn.ink/preview/197847/p1_3667007_add5c6ad.jpg" width="200" height="200" alt="изображение 2"></td>
+  </tr>
+  <tr>
+    <td><img src="https://i.pinimg.com/736x/79/a1/81/79a181f3f7e308d127060394da9637cf.jpg" width="200" height="200" alt="пиксель мику 1"></td>
+    <td><img src="https://i.pinimg.com/736x/25/e0/b6/25e0b63af80ed31e5a835193b3b8918f.jpg" width="200" height="200" alt="пиксель мику 2"></td>
+  </tr>
+</table>
+
+## Список того, что сделано
+- [x] Придумать концепт  
+- [ ] Начать разработку
+- [ ] Примдумать хотя бы 1 уникальную механику
+- [ ] Нарисовать спрайты
