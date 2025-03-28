@@ -1,0 +1,38 @@
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\Miku Game.exe
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\Miku Game.deps.json
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\Miku Game.runtimeconfig.json
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\Miku Game.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\Miku Game.pdb
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\MonoGame.Framework.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\SharpDX.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\SharpDX.Direct2D1.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\SharpDX.Direct3D11.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\SharpDX.Direct3D9.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\SharpDX.DXGI.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\SharpDX.Mathematics.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\SharpDX.MediaFoundation.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\SharpDX.XAudio2.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\SharpDX.XInput.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\runtimes\debian-x64\native\libuv.so
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\runtimes\fedora-x64\native\libuv.so
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\runtimes\opensuse-x64\native\libuv.so
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\runtimes\osx\native\libuv.dylib
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\runtimes\rhel-x64\native\libuv.so
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\obj\Debug\net6.0-windows\Miku Game.csproj.AssemblyReference.cache
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\obj\Debug\net6.0-windows\Miku Game.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\obj\Debug\net6.0-windows\Miku Game.AssemblyInfoInputs.cache
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\obj\Debug\net6.0-windows\Miku Game.AssemblyInfo.cs
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\obj\Debug\net6.0-windows\Miku Game.csproj.CoreCompileInputs.cache
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\obj\Debug\net6.0-windows\Miku Game.sourcelink.json
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\obj\Debug\net6.0-windows\Miku Game.csproj.Up2Date
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\obj\Debug\net6.0-windows\Miku Game.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\obj\Debug\net6.0-windows\refint\Miku Game.dll
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\obj\Debug\net6.0-windows\Miku Game.pdb
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\obj\Debug\net6.0-windows\Miku Game.genruntimeconfig.cache
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\obj\Debug\net6.0-windows\ref\Miku Game.dll

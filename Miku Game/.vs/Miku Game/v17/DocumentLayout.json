@@ -1,0 +1,48 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Proga Project Miku game\\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\\Miku Game\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0690D3F3-87CF-4A26-86BD-9AF0AAB4A947}|Miku Game.csproj|d:\\proga project miku game\\monogame-project-dead-brain-cells-with-miku-and-pepino\\miku game\\miku game.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{0690D3F3-87CF-4A26-86BD-9AF0AAB4A947}|Miku Game.csproj|solutionrelative:miku game.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Miku Game",
+              "DocumentMoniker": "D:\\Proga Project Miku game\\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\\Miku Game\\Miku Game.csproj",
+              "RelativeDocumentMoniker": "Miku Game.csproj",
+              "ToolTip": "D:\\Proga Project Miku game\\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\\Miku Game\\Miku Game.csproj",
+              "RelativeToolTip": "Miku Game.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-28T11:12:31.346Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
