@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Miku Game")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fafb5fceaae750463aee92edb00ead3fc071035e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa51b05d2e76687be9a2e2ee0fceca1837265991")]
 [assembly: System.Reflection.AssemblyProductAttribute("Miku Game")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Miku Game")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

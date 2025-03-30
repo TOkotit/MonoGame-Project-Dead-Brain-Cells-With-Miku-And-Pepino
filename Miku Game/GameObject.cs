@@ -18,21 +18,21 @@ namespace Miku_Game
 
         public float CurrentSpeed { get; set; }
         public float StandartSpeed { get; set; }
-        public float MaxSpeed { get; set; }
         public Color Color { get; set; } = Color.White;
         public bool IsAffectedByGravity { get; set; } = true;
 
         public GameObject()
         {
-            StandartSpeed = 100f;
-            MaxSpeed = 400f;
+            StandartSpeed = 1000f;
             Position = new Vector2(0, 0);
             Velocity = new Vector2(0, 0);
         }
         public virtual void Update(GameTime gameTime)
         {
-            if (IsAffectedByGravity)
+            if (IsAffectedByGravity && Velocity.Y < 0)
                 Velocity.Y += Main.Gravity * (float)gameTime.ElapsedGameTime.TotalSeconds;
+            else if (IsAffectedByGravity)
+                Velocity.Y += Main.Gravity * (float)gameTime.ElapsedGameTime.TotalSeconds * 1.5f ;
 
             Position += Velocity * (float)gameTime.ElapsedGameTime.TotalSeconds;
         }

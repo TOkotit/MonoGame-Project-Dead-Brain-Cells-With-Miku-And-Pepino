@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
 using System.Linq;
 
 namespace Miku_Game;
@@ -18,7 +19,7 @@ public class Main : Game
     public Main()
     {
         Miku = new();
-        Gravity = 200f;
+        Gravity = 300f;
         _graphics = new GraphicsDeviceManager(this);
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
@@ -52,30 +53,46 @@ public class Main : Game
 
 
 
-        if (kstate.IsKeyDown(Keys.Up))
-            Miku.Velocity.Y -= Gravity * 0.9f;
+        if (kstate.IsKeyDown(Keys.Space) && !Miku.IsAffectedByGravity)
+        {
+            Miku.Velocity.Y -= Gravity * 1.5f;
+            Miku.IsAffectedByGravity = true;
+        }
 
-        if (kstate.IsKeyDown(Keys.Left))
-            Miku.Velocity.X -= Miku.StandartSpeed;
+        if (kstate.IsKeyDown(Keys.A) && !(Miku.Position.X == Miku.Texture.Width / 2))
+            Miku.Velocity.X = -Miku.StandartSpeed;
 
-        if (kstate.IsKeyDown(Keys.Right))
-            Miku.Velocity.X += Miku.StandartSpeed;
+        if (kstate.IsKeyDown(Keys.D) && !(Miku.Position.X == _graphics.PreferredBackBufferWidth - Miku.Texture.Width / 2))
+            Miku.Velocity.X = Miku.StandartSpeed;
 
-
-
+        if (!kstate.IsKeyDown(Keys.D) && !kstate.IsKeyDown(Keys.A))
+            Miku.Velocity.X = 0;
 
 
         if (Miku.Position.X > _graphics.PreferredBackBufferWidth - Miku.Texture.Width / 2)
+        {
+            Miku.Velocity.X = 0;
             Miku.Position.X = _graphics.PreferredBackBufferWidth - Miku.Texture.Width / 2;
+        }
 
         else if (Miku.Position.X < Miku.Texture.Width / 2)
+        {
             Miku.Position.X = Miku.Texture.Width / 2;
+            Miku.Velocity.X = 0;
+        }
 
-        if (Miku.Position.Y > _graphics.PreferredBackBufferHeight - Miku.Texture.Height / 2)
+        if (Miku.Position.Y > _graphics.PreferredBackBufferHeight - Miku.Texture.Height / 2 && Miku.IsAffectedByGravity)
+        {
             Miku.Position.Y = _graphics.PreferredBackBufferHeight - Miku.Texture.Height / 2;
+            Miku.IsAffectedByGravity = false;
+            Miku.Velocity.Y = 0;
+        }
 
         else if (Miku.Position.Y < Miku.Texture.Height / 2)
+        {
             Miku.Position.Y = Miku.Texture.Height / 2;
+            Miku.Velocity.Y = 0;
+        }
 
         Miku.Update(gameTime);
         base.Update(gameTime);

@@ -15,10 +15,6 @@ namespace Miku_Game
     {
         public override void Update(GameTime gameTime)
         {
-            if (Velocity.X != 0)
-                Velocity.X -= 10f * (float)gameTime.ElapsedGameTime.TotalSeconds;
-            if (Math.Abs(Velocity.X) < 1)
-                Velocity.X = 0;
             base.Update(gameTime);
         }
     }
