@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ namespace Miku_Game
 {   
 
 
-    public class Player : GameObject 
+    public class Player : InteractiveObject 
     {
         public override void Update(GameTime gameTime)
         {
