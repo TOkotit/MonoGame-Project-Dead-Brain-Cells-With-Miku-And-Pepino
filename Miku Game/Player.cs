@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,14 +12,10 @@ namespace Miku_Game
 {   
 
 
-    public class Player : GameObject 
+    public class Player : InteractiveObject 
     {
         public override void Update(GameTime gameTime)
         {
-            if (Velocity.X != 0)
-                Velocity.X -= 10f * (float)gameTime.ElapsedGameTime.TotalSeconds;
-            if (Math.Abs(Velocity.X) < 1)
-                Velocity.X = 0;
             base.Update(gameTime);
         }
     }

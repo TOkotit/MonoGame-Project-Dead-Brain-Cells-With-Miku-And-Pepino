@@ -17,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{0690D3F3-87CF-4A26-86BD-9AF0AAB4A947}|Miku Game.csproj|d:\\proga project miku game\\monogame-project-dead-brain-cells-with-miku-and-pepino\\miku game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0690D3F3-87CF-4A26-86BD-9AF0AAB4A947}|Miku Game.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0690D3F3-87CF-4A26-86BD-9AF0AAB4A947}|Miku Game.csproj|d:\\proga project miku game\\monogame-project-dead-brain-cells-with-miku-and-pepino\\miku game\\interactiveobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0690D3F3-87CF-4A26-86BD-9AF0AAB4A947}|Miku Game.csproj|solutionrelative:interactiveobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,20 +29,34 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 318,
-          "SelectedChildIndex": 0,
+          "DockedHeight": 257,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Main.cs",
-              "DocumentMoniker": "D:\\Proga Project Miku game\\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\\Miku Game\\Main.cs",
-              "RelativeDocumentMoniker": "Main.cs",
-              "ToolTip": "D:\\Proga Project Miku game\\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\\Miku Game\\Main.cs",
-              "RelativeToolTip": "Main.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "GameObject.cs",
+              "DocumentMoniker": "D:\\Proga Project Miku game\\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\\Miku Game\\GameObject.cs",
+              "RelativeDocumentMoniker": "GameObject.cs",
+              "ToolTip": "D:\\Proga Project Miku game\\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\\Miku Game\\GameObject.cs",
+              "RelativeToolTip": "GameObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T17:09:25.423Z",
+              "WhenOpened": "2025-03-30T15:34:33.378Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\Proga Project Miku game\\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\\Miku Game\\Player.cs",
+              "RelativeDocumentMoniker": "Player.cs",
+              "ToolTip": "D:\\Proga Project Miku game\\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\\Miku Game\\Player.cs*",
+              "RelativeToolTip": "Player.cs*",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T15:08:49.725Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -64,15 +82,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GameObject.cs",
-              "DocumentMoniker": "D:\\Proga Project Miku game\\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\\Miku Game\\GameObject.cs",
-              "RelativeDocumentMoniker": "GameObject.cs",
-              "ToolTip": "D:\\Proga Project Miku game\\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\\Miku Game\\GameObject.cs",
-              "RelativeToolTip": "GameObject.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAwCUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\Proga Project Miku game\\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\\Miku Game\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "D:\\Proga Project Miku game\\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\\Miku Game\\Main.cs*",
+              "RelativeToolTip": "Main.cs*",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T15:34:33.378Z",
+              "WhenOpened": "2025-03-28T17:09:25.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InteractiveObject.cs",
+              "DocumentMoniker": "D:\\Proga Project Miku game\\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\\Miku Game\\InteractiveObject.cs",
+              "RelativeDocumentMoniker": "InteractiveObject.cs",
+              "ToolTip": "D:\\Proga Project Miku game\\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\\Miku Game\\InteractiveObject.cs",
+              "RelativeToolTip": "InteractiveObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T06:13:17.037Z",
               "EditorCaption": ""
             },
             {
@@ -87,19 +118,16 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T15:21:16.594Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        },
+        {
+          "DockedHeight": 104,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Player.cs",
-              "DocumentMoniker": "D:\\Proga Project Miku game\\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\\Miku Game\\Player.cs",
-              "RelativeDocumentMoniker": "Player.cs",
-              "ToolTip": "D:\\Proga Project Miku game\\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\\Miku Game\\Player.cs",
-              "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAwBMAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T15:08:49.725Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

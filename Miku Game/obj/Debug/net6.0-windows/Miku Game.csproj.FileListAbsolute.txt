@@ -38,3 +38,4 @@ D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepin
 D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\obj\Debug\net6.0-windows\ref\Miku Game.dll
 D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\Content\ball.xnb
 D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\Content\Player textures\miku_test_texture.xnb
+D:\Proga Project Miku game\MonoGame-Project-Dead-Brain-Cells-With-Miku-And-Pepino\Miku Game\bin\Debug\net6.0-windows\Content\backgrounds\test_bg.xnb
