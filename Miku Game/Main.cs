@@ -10,9 +10,10 @@ namespace Miku_Game;
 public class Main : Game
 {
     public static float Gravity;
-    public Player Miku;
+    private Player Miku;
+    private Camera Camera;
     public GraphicsDeviceManager _graphics;
-    private SpriteBatch _spriteBatch;
+    private  SpriteBatch _spriteBatch;
 
 
 
@@ -20,7 +21,7 @@ public class Main : Game
     {
         Gravity = 900f;
         _graphics = new GraphicsDeviceManager(this);
-        Miku = new();
+       
 
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
@@ -29,7 +30,8 @@ public class Main : Game
 
     protected override void Initialize()
     {
-        base.Initialize();
+        Miku = new();
+        
 
         _graphics.PreferredBackBufferWidth = (int)(GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width * 0.95);
         _graphics.PreferredBackBufferHeight = (int)(GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height * 0.9);
@@ -40,6 +42,9 @@ public class Main : Game
         _graphics.ApplyChanges();
 
         Miku.Position = new Vector2(_graphics.PreferredBackBufferWidth / 2, _graphics.PreferredBackBufferHeight / 2);
+        Camera = new Camera(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight);
+
+        base.Initialize();
 
 
     }
@@ -62,8 +67,8 @@ public class Main : Game
 
         if (kstate.IsKeyDown(Keys.Space) && !Miku.IsAffectedByGravity)
         {
-            Miku.Velocity.Y -= 600f;
-            Miku.IsAffectedByGravity = true;
+            Miku.Position.Y -= 100f;
+            Miku.IsAffectedByGravity = false;
         }
 
         if (kstate.IsKeyDown(Keys.A) && !(Miku.Position.X == Miku.Texture.Width / 2))
@@ -75,32 +80,8 @@ public class Main : Game
         if (!kstate.IsKeyDown(Keys.D) && !kstate.IsKeyDown(Keys.A))
             Miku.Velocity.X = 0;
 
-
-        if (Miku.Position.X > _graphics.PreferredBackBufferWidth - Miku.Texture.Width / 2)
-        {
-            Miku.Velocity.X = 0;
-            Miku.Position.X = _graphics.PreferredBackBufferWidth - Miku.Texture.Width / 2;
-        }
-
-        else if (Miku.Position.X < Miku.Texture.Width / 2)
-        {
-            Miku.Position.X = Miku.Texture.Width / 2;
-            Miku.Velocity.X = 0;
-        }
-
-        if (Miku.Position.Y > _graphics.PreferredBackBufferHeight - Miku.Texture.Height / 2 && Miku.IsAffectedByGravity)
-        {
-            Miku.Position.Y = _graphics.PreferredBackBufferHeight - Miku.Texture.Height / 2;
-            Miku.IsAffectedByGravity = false;
-            Miku.Velocity.Y = 0;
-        }
-
-        else if (Miku.Position.Y < Miku.Texture.Height / 2)
-        {
-            Miku.Position.Y = Miku.Texture.Height / 2;
-            Miku.Velocity.Y = 0;
-        }
-        Miku.Update(gameTime);
+        Miku.Update(gameTime, _graphics);
+        Camera.Follow(Miku.Position);
         base.Update(gameTime);
     }
 
@@ -108,16 +89,21 @@ public class Main : Game
     {
         GraphicsDevice.Clear(Color.BlueViolet);
 
-        // Отладочная информация
-        string debugText = $"Player position: {Miku.Position}\n" +
-                         $"Texture size: {Miku.Texture?.Width}x{Miku.Texture?.Height}\n" +
-                         $"Window size: {_graphics.PreferredBackBufferWidth}x{_graphics.PreferredBackBufferHeight}";
+        _spriteBatch.Begin(samplerState: SamplerState.PointClamp, transformMatrix: Camera.TransformMatrix);
 
-        _spriteBatch.Begin();
+        _spriteBatch.Draw(
+           Content.Load<Texture2D>("backgrounds/test_bg"),
+           new Vector2(0, 0),
+           null,
+           Color.White,
+           0f,
+           new Vector2(3200, 1331),
+           Vector2.One,
+           SpriteEffects.None,
+           0f);
+
+
         Miku.Draw(_spriteBatch);
-
-        // Для вывода текста нужно загрузить шрифт в LoadContent()
-        // _spriteBatch.DrawString(_font, debugText, new Vector2(10, 10), Color.White);
 
         _spriteBatch.End();
 
