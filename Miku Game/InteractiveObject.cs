@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,18 +11,11 @@ namespace Miku_Game
 
     public class InteractiveObject : GameObject
     {
-        public Vector2 Velocity;
-        public float CurrentSpeed { get; set; }
-        public float StandartSpeed { get; set; }
-        public bool IsAffectedByGravity { get; set; } = true;
+        public Vector2 Velocity = new Vector2(0, 0);
+        public float StandartSpeed { get; set; } = 900f;
+        public bool IsAffectedByGravity { get; set; } = false;
 
-        public InteractiveObject()
-        {
-            StandartSpeed = 700f;
-            Velocity = new Vector2(0, 0);
-        }
-
-        public virtual void Update(GameTime gameTime)
+        public virtual void Update(GameTime gameTime, GraphicsDeviceManager graphic)
         {
             if (IsAffectedByGravity && Velocity.Y < 0)
                 Velocity.Y += Main.Gravity * (float)gameTime.ElapsedGameTime.TotalSeconds;
@@ -31,6 +23,36 @@ namespace Miku_Game
                 Velocity.Y += Main.Gravity * (float)gameTime.ElapsedGameTime.TotalSeconds * 1.5f;
 
             Position += Velocity * (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+            //CheckBorders(graphic);
+        }
+
+        private void CheckBorders(GraphicsDeviceManager graphic)
+        {
+            if (Position.X > graphic.PreferredBackBufferWidth - Texture.Width / 2)
+            {
+                Velocity.X = 0;
+                Position.X = graphic.PreferredBackBufferWidth - Texture.Width / 2;
+            }
+
+            else if (Position.X < Texture.Width / 2)
+            {
+                Position.X = Texture.Width / 2;
+                Velocity.X = 0;
+            }
+
+            if (Position.Y > graphic.PreferredBackBufferHeight - Texture.Height / 2 && IsAffectedByGravity)
+            {
+                Position.Y = graphic.PreferredBackBufferHeight - Texture.Height / 2;
+                IsAffectedByGravity = false;
+                Velocity.Y = 0;
+            }
+
+            else if (Position.Y < Texture.Height / 2)
+            {
+                Position.Y = Texture.Height / 2;
+                Velocity.Y = 0;
+            }
         }
     }
 }
