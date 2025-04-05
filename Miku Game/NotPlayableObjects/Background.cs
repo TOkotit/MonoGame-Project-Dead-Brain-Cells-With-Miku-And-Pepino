@@ -5,12 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
+using Miku_Game.InGameObjects;
 
-
-namespace Miku_Game 
-{   
-    public class Player : InteractiveObject 
+namespace Miku_Game.NotPlayableObjects
+{
+    class Background : GameObject
     {
     }
 }
