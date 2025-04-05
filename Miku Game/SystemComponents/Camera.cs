@@ -1,9 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using Miku_Game;
 
-namespace Miku_Game
+namespace Miku_Game.SystemComponents
 {
     public class Camera
     {
