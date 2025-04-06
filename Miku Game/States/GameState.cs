@@ -17,7 +17,7 @@ namespace Miku_Game.States
     class GameState : State
     {
         public static float Gravity;
-        private Player Miku = new();
+        private Player Miku;
         private Camera Camera;
         public Texture2D bg;
 
@@ -26,9 +26,9 @@ namespace Miku_Game.States
         {
             var _graphics = Main._graphics;
             Gravity = 900f;
-            Miku.Position = new Vector2(Main._graphics.PreferredBackBufferWidth / 2, _graphics.PreferredBackBufferHeight / 2);
+            Miku = new("Player textures/miku_test_texture", content);
+            // Miku.Position = new Vector2(_graphics.PreferredBackBufferWidth / 2, _graphics.PreferredBackBufferHeight / 2);
             Camera = new Camera(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight);
-            Miku.Texture = content.Load<Texture2D>("Player textures/miku_test_texture");
             bg = content.Load<Texture2D>("backgrounds/test_bg");
 
         }
@@ -59,33 +59,8 @@ namespace Miku_Game.States
 
         public override void Update(GameTime gameTime)
         {
-            var kstate = Keyboard.GetState();
-            var goDuration = new Vector2(0, 0);
+            
 
-
-            //if (kstate.IsKeyDown(Keys.Space) && !Miku.IsAffectedByGravity)
-            //{
-            //    Miku.Position.Y -= 100f;
-            //    Miku.IsAffectedByGravity = false;
-            //}
-            if (kstate.IsKeyDown(Keys.W) && !(Miku.Position.X == Miku.Texture.Width / 2))
-                goDuration.Y -= Miku.StandartSpeed;
-            if (kstate.IsKeyDown(Keys.S) && !(Miku.Position.X == Miku.Texture.Width / 2))
-                goDuration.Y += Miku.StandartSpeed;
-
-            if (kstate.IsKeyDown(Keys.A) && !(Miku.Position.X == Miku.Texture.Width / 2))
-                goDuration.X -= Miku.StandartSpeed;
-
-            if (kstate.IsKeyDown(Keys.D) && !(Miku.Position.X == Main._graphics.PreferredBackBufferWidth - Miku.Texture.Width / 2))
-                goDuration.X += Miku.StandartSpeed;
-
-            if (!kstate.IsKeyDown(Keys.D) && !kstate.IsKeyDown(Keys.A))
-                goDuration.X = 0;
-
-            if (!kstate.IsKeyDown(Keys.W) && !kstate.IsKeyDown(Keys.S))
-                goDuration.Y = 0;
-
-            Miku.Velocity = goDuration;
             Miku.Update(gameTime, Main._graphics);
             Camera.Follow(Miku.Position);
 

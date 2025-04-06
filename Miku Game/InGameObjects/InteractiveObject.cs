@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Miku_Game.SystemComponents;
 using Miku_Game.States;
+using Microsoft.Xna.Framework.Content;
 
 namespace Miku_Game.InGameObjects
 {
@@ -14,6 +15,11 @@ namespace Miku_Game.InGameObjects
     public class InteractiveObject : GameObject
     {
         public Vector2 Velocity = new Vector2(0, 0);
+
+        public InteractiveObject(string filePath, ContentManager content) : base(filePath, content)
+        {
+        }
+
         public float StandartSpeed { get; set; } = 900f;
         public bool IsAffectedByGravity { get; set; } = false;
 
@@ -22,7 +28,7 @@ namespace Miku_Game.InGameObjects
             if (IsAffectedByGravity && Velocity.Y < 0)
                 Velocity.Y += GameState.Gravity * (float)gameTime.ElapsedGameTime.TotalSeconds;
             else if (IsAffectedByGravity)
-                Velocity.Y += GameState.Gravity * (float)gameTime.ElapsedGameTime.TotalSeconds * 1.5f;
+                Velocity.Y += GameState .Gravity * (float)gameTime.ElapsedGameTime.TotalSeconds * 1.5f;
 
             Position += Velocity * (float)gameTime.ElapsedGameTime.TotalSeconds;
         }

@@ -35,8 +35,7 @@ public class Main : Game
 
     protected override void Initialize()
     {
-        
-
+       
         _graphics.PreferredBackBufferWidth = (int)(GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width * 0.95);
         _graphics.PreferredBackBufferHeight = (int)(GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height * 0.9);
 
@@ -45,9 +44,8 @@ public class Main : Game
 
         _graphics.ApplyChanges();
 
-       
-        base.Initialize();
 
+        base.Initialize();
 
     }
 
